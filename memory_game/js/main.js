@@ -11,24 +11,36 @@ cards = ["queen", "queen", "king", "king"]
 
 cardsInPlay = []
 
-cardOne = cards[0]
+function flipCard(cardId){
 
-cardsInPlay.push(cardOne)
-console.log(cardsInPlay);
+  if (cardsInPlay.length === 2){
+    console.log("Yes it is");
+  }
 
-cardTwo = cards[2]
+  if (cardsInPlay[0] === cardsInPlay[1]){
+    console.log("Nice match");
+  } else {
+    console.log("Try again");
+  }
 
-cardsInPlay.push(cardTwo)
-console.log(cardsInPlay);
+// cardOne = cards[0]
 
-console.log("User flipped " + cardTwo);
+// cardsInPlay.push(cardOne)
+// console.log(cardsInPlay);
+//
+// cardTwo = cards[2]
+//
+// cardsInPlay.push(cardTwo)
+// console.log(cardsInPlay);
+//
+// console.log("User flipped " + cardTwo);
 
-if (cardsInPlay.length === 2){
-  console.log("Yes it is");
-}
-
-if (cardsInPlay[0] === cardsInPlay[1]){
-  console.log("Nice match");
-} else {
-  console.log("Try again");
-}
+// if (cardsInPlay.length === 2){
+//   console.log("Yes it is");
+// }
+//
+// if (cardsInPlay[0] === cardsInPlay[1]){
+//   console.log("Nice match");
+// } else {
+//   console.log("Try again");
+// }
